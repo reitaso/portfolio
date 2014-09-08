@@ -25,6 +25,7 @@ $(window).parallax({
 	style : 'top',
 	fixPosition : 0,
 	speed : -1.5,
+	maxValue : 0,
 	adjustment : Number($('.flag2').css('top').replace('px', '')),
 	contentStartLinePercent: 50
 });
@@ -35,6 +36,7 @@ $(window).parallax({
 	style : 'top',
 	fixPosition : 0,
 	speed : -2,
+	maxValue : 0,
 	adjustment : Number($('.flag').css('top').replace('px', '')),
 	contentStartLinePercent: 50
 });
@@ -196,6 +198,7 @@ $(window).parallax({
 	style : 'top',
 	fixPosition : $('body').height() - $(window).height(),
 	speed : 3,
+	maxValue : 245,
 	adjustment : Number($('.stage').css('top').replace('px', '')), 
 });
 
