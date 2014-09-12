@@ -1,16 +1,17 @@
 $(function(){
 
 
-
-$(".colorbox a").colorbox({iframe:true, width:800,height:500});
+$(".folio .colorbox a").colorbox({rel: 'folio'});
+$(".folio2 .colorbox a").colorbox({rel: 'folio2'});
+$("#footer .colorbox a").colorbox({iframe:true,width:800,height: 600});
 
 
 $('.folio').random('<img src="images/syabon.png">',{
-	stageWidth: 800,
+	stageWidth: 700,
 	stageHeight: 530,
-	num: 13,
-	width: 170,
-	height: 170,
+	num: 9,
+	width: 80,
+	height: 80,
 	min: 30
 });
 
@@ -66,22 +67,6 @@ $(".introduce").mouseover(function(){
 /*------------------
 main
 ------------------*/
-$('[class*=randomContent]').each(function(i){
-	//スピードをランダムで指定
-	//-2から2までの範囲のスピードを取得
-	var randomSpeed = 10 + Math.random() * 2;
-		randomSpeed = Math.floor(Math.random() * 2) === 0 ? -randomSpeed : randomSpeed;
-
-	//プラグインを使った動きの設定
-	$(window).parallax({
-		parallax : $(this),
-		type : 'type2',
-		style : 'top',
-		fixPosition : $('.folio').offset().top,
-		speed : randomSpeed,
-		adjustment : Number($(this).css('top').replace('px', ''))
-	});
-});
 $(window).parallax({
 	parallax : $('.folio'),
 	type : 'type2',
