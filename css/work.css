@@ -1,6 +1,7 @@
 /*-----------------
 #work
 ----------------*/
+
 body#work {
 	background: none;
 	margin:  auto;
@@ -12,6 +13,7 @@ body#work {
 	border: #717171 7px solid;
 	margin-bottom: 20px;
 	border-radius: 5px;
+	overflow: hidden;
 }
 #work img {
 	vertical-align: bottom;
@@ -26,6 +28,7 @@ body#work {
 #work p {
 	float: left;
 	margin-left: 10px;
+	overflow: hidden;
 }
 #work .literary {
 	width: 300px;
