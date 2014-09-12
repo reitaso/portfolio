@@ -1,8 +1,7 @@
 $(function(){
 
 
-$(".folio .colorbox a").colorbox({rel: 'folio'});
-$(".folio2 .colorbox a").colorbox({rel: 'folio2'});
+$(".folio2 .colorbox a").colorbox();
 $("#footer .colorbox a").colorbox({iframe:true,width:800,height: 600});
 
 
